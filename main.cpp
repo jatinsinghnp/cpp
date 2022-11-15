@@ -1,31 +1,25 @@
 #include <iostream>
-// using namespace std; 
-//using driective 
-double pow(double  base,int exponent){
-  double result=1;
-  for (int i = 0; i < exponent;i++)
-  {
-  	result *=base;
-  }
-  return result;
-}
-
-
-void print_pow(double base,int exponent){
-	
-	double myPower=pow(base,exponent);
-	std::cout<<base<<"raise to"<<exponent<<"power is"<<myPower<<std::endl;
-}
-
-
+#include <climits>
 
 int main(){ 
-    int base,exponent;
-    std::cout<<"What is the base :"<<std::endl;
-    std::cin>>base;
-    std::cout<<"what is the  exponent"<<std::endl;
-    std::cin>>exponent;
-
-    print_pow(base,exponent);
-	return 0;	    
+	 short a; //16 ->  1 byte  = 8 bit     
+	 int b;  //32 ->   1 byte  = 8 bit
+	 long c; // 32 ->  1 byte  = 8 bit
+	 long long d; //64 -> 1 byte  = 8 bit 
+	 
+	 // short<=int<=long<=long long
+	 
+	 unsigned short aa;
+	 unsigned int bb;
+	 unsigned long cc;
+	 unsigned long long dd;
+	 
+	  // std::cout<<SHRT_MAX<<std::endl;
+	  // std::cout<<SHRT_MIN<<std::endl;
+	  // std::cout<<USHRT_MAX <<std::endl;
+	  // std::cout<<SHRT_MIN<<std::endl;
+	  
+	  std::cout<<ULLONG_MAX<<std::endl;
+	 
+   
 }
