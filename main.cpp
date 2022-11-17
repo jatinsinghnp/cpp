@@ -1,16 +1,16 @@
 #include <iostream>
-#include <climits>
+#include <float.h>
 using std::cout;
+using std::cin;
 
 int main(){ 
-	 char x='A';
-	 char b='B';
-	 unsigned char c=200;
-	 cout<<(int)x<<std::endl;
-	 cout<<(int)b<<std::endl;
-	 cout<<(int)c<<std::endl;
-	 cout<<c<<std::endl;
-	 
-	 
-	 
+	float a=10.0/3;
+	a=a*10000000000000000;
+	double b=7.7E4; //7.7E4
+		long double c;
+	cout<<b;
+	cout<<std::fixed<<a<<std::endl;
+	cout<<DBL_DIG<<std::endl;
+	cout<<FLT_DIG<<std::endl;
+	cout<<LDBL_DIG<<std::endl;
 }
